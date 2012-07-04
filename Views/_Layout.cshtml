@@ -24,18 +24,12 @@
 
    <link href="@Bundles.Url("assets/stylesheets/style.less")" rel="stylesheet" type="text/css" media="screen" />
    <link href="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.11/themes/humanity/jquery-ui.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Scripts/timepicker_plug/css/TimePickerAddOn.css")"/>
 
    @Bundles.RenderScripts("header")
 
-   <script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.6.2.min.js" type="text/javascript"></script> 
-   <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.15/jquery-ui.min.js" type="text/javascript"></script> 
-   <script src="//ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
-   <script src="//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js" type="text/javascript"></script> 
-   <script src="//ajax.aspnetcdn.com/ajax/mvc/3.0/MicrosoftMvcAjax.js" type="text/javascript"></script> 
-
    @*<script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
    <script src="http://cdn.uservoice.com/javascripts/widgets/tab.js" type="text/javascript"></script>*@
-   <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Scripts/timepicker_plug/css/TimePickerAddOn.css")"/>
    <link rel="alternate" type="application/rss+xml" title="NerdDinner.com - Upcoming Dinners" href="@Url.Content("~/Services/RSS")" />
    <link rel="odata.service" title="NerdDinner.com OData Service" href="@Url.Content("~/Services/OData.svc")" />
    <link rel="odata.feed" title="NerdDinner.com OData Service - Dinners" href="@Url.Content("~/Services/OData.svc/Dinners")" />
@@ -112,6 +106,12 @@
                lang: 'en' /* 'en', 'de', 'nl', 'es', 'fr' */
            });
        </script>*@
+   <script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.6.2.min.js" type="text/javascript"></script> 
+   <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.15/jquery-ui.min.js" type="text/javascript"></script> 
+   <script src="//ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
+   <script src="//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js" type="text/javascript"></script> 
+   <script src="//ajax.aspnetcdn.com/ajax/mvc/3.0/MicrosoftMvcAjax.js" type="text/javascript"></script> 
+
    <script>
        if (typeof jQuery == 'undefined') {
            document.write(unescape("%3Clink href='@Bundles.Url(DinnerParty.CassetteBundleConfiguration.JQueryUiCssPath)' rel='stylesheet' type='text/css'%3E"));
