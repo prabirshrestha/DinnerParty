@@ -16,11 +16,13 @@ namespace DinnerParty
 {
     public class Bootstrapper : DefaultNancyBootstrapper
     {
-        private byte[] favicon;
-
         protected override void ApplicationStartup(TinyIoC.TinyIoCContainer container, Nancy.Bootstrapper.IPipelines pipelines)
         {
             base.ApplicationStartup(container, pipelines);
+
+#if !DEBUG
+            Cassette.Nancy.CassetteNancyStartup.OptimizeOutput = true;
+#endif
 
             DataAnnotationsValidator.RegisterAdapter(typeof(MatchAttribute), (v, d) => new CustomDataAdapter((MatchAttribute)v));
 
