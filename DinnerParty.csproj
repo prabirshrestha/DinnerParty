@@ -232,7 +232,7 @@
     <Content Include="Content\Scripts\MicrosoftAjax.debug.js" />
     <Content Include="assets\javascripts\libs\MicrosoftAjax\MicrosoftAjax.js" />
     <Content Include="Content\Scripts\MicrosoftMvcAjax.debug.js" />
-    <Content Include="Content\Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="assets\javascripts\libs\MicrosoftMvcAjax\MicrosoftMvcAjax.js" />
     <Content Include="Content\Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Content\Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Content\Scripts\MSAjaxHistoryBundle.js" />

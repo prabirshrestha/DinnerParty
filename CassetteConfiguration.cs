@@ -26,6 +26,8 @@ namespace DinnerParty
             bundles.Add<ScriptBundle>("assets/javascripts/libs/jquery.ui", b => b.PageLocation = "jquery.ui");
             bundles.Add<ScriptBundle>("assets/javascripts/libs/jquery.unobtrusive-ajax", b => b.PageLocation = "jquery.unobtrusive-ajax");
             bundles.Add<ScriptBundle>("assets/javascripts/libs/MicrosoftAjax", b => b.PageLocation = "MicrosoftAjax");
+            bundles.Add<ScriptBundle>("assets/javascripts/libs/MicrosoftMvcAjax", b => b.PageLocation = "MicrosoftMvcAjax");
+
 
 
         }
