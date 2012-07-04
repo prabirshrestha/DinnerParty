@@ -10,6 +10,7 @@ using Raven.Client;
 using TinyIoC;
 using DinnerParty.Models;
 using Raven.Abstractions.Data;
+using Nancy.Conventions;
 
 namespace DinnerParty
 {
@@ -62,6 +63,12 @@ namespace DinnerParty
             base.ConfigureRequestContainer(container, context);
 
             container.Register<IUserMapper, UserMapper>();
+        }
+
+        protected override void ConfigureConventions(Nancy.Conventions.NancyConventions nancyConventions)
+        {
+            base.ConfigureConventions(nancyConventions);
+            nancyConventions.StaticContentsConventions.Add(StaticContentConventionBuilder.AddDirectory("/assets/images", "/assets/images"));
         }
 
         protected override Nancy.Bootstrapper.NancyInternalConfiguration InternalConfiguration
