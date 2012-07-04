@@ -125,7 +125,11 @@
    </script>
    @Bundles.RenderScripts("app")
    <script>
-       App.initialize();
+       App.initialize({
+           root: '@Url.Content("~/")',
+           ipInfoDbKey: '@System.Configuration.ConfigurationManager.AppSettings["ipInfoDbKey"]',
+           bigMapsKey: '@System.Configuration.ConfigurationManager.AppSettings["BingMapsKey"]'
+       });
    </script>
    @RenderSection("js", required: false)
 </body>

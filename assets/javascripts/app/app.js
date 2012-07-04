@@ -1,12 +1,19 @@
-﻿// @reference _libs/date.format.js
-// @reference _libs/NerdDinner.js
-// @reference _libs/timepicker_plug/TimePickerAddOn.js
-
-
+﻿
 App = {
+    Views: {},
     
     initialize: function(options) {
         options || (options = { });
+
+        this.options = options;
+       
+        for(var key in App.Views)
+        {
+            var view = App.Views[key];
+            if (view.initialize) {
+                view.initialize();
+            }
+        }
     }
 
 };

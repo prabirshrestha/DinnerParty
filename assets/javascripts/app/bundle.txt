@@ -1,0 +1,3 @@
+﻿_libs/*
+app.js
+views/*
