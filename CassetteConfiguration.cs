@@ -14,6 +14,7 @@ namespace DinnerParty
             // Please read http://getcassette.net/documentation/configuration
 
             bundles.Add<StylesheetBundle>("assets/stylesheets/style.less");
+            bundles.Add<ScriptBundle>("assets/javascripts/header", b => b.PageLocation = "header");
         }
     }
 }

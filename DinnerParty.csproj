@@ -185,6 +185,7 @@
     <Content Include="assets\images\verisign.gif" />
     <Content Include="assets\images\yahoo.gif" />
     <Content Include="assets\images\yahoo_login.png" />
+    <Content Include="assets\javascripts\header\modernizr-2.0.6-development-only.js" />
     <Content Include="assets\stylesheets\style.less" />
     <None Include="Resources\favicon.ico" />
     <Content Include="Content\Scripts\date.format.js" />
@@ -218,8 +219,6 @@
     <Content Include="Content\Scripts\MicrosoftMvcAjax.js" />
     <Content Include="Content\Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Content\Scripts\MicrosoftMvcValidation.js" />
-    <Content Include="Content\Scripts\modernizr-1.7.js" />
-    <Content Include="Content\Scripts\modernizr-1.7.min.js" />
     <Content Include="Content\Scripts\MSAjaxHistoryBundle.js" />
     <Content Include="Content\Scripts\NerdDinner.js" />
     <Content Include="Content\Scripts\smothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -240,8 +239,6 @@
     <Content Include="Content\Scripts\timepicker_plug\css\TimePickerAddOn.css" />
     <Content Include="Content\Scripts\timepicker_plug\timepicker.js" />
     <Content Include="Content\Scripts\timepicker_plug\TimePickerAddOn.js" />
-    <Content Include="Content\Scripts\yepnope.1.0.1-min.js" />
-    <Content Include="Content\Scripts\yepnope.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -328,7 +325,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="assets\javascripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
