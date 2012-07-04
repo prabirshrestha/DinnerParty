@@ -230,7 +230,7 @@
     <Content Include="Content\Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Content\Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Content\Scripts\MicrosoftAjax.debug.js" />
-    <Content Include="Content\Scripts\MicrosoftAjax.js" />
+    <Content Include="assets\javascripts\libs\MicrosoftAjax\MicrosoftAjax.js" />
     <Content Include="Content\Scripts\MicrosoftMvcAjax.debug.js" />
     <Content Include="Content\Scripts\MicrosoftMvcAjax.js" />
     <Content Include="Content\Scripts\MicrosoftMvcValidation.debug.js" />
