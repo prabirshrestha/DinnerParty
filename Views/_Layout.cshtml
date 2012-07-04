@@ -8,7 +8,7 @@
     Bundles.Reference("assets/javascripts/libs/jquery.unobtrusive-ajax");
     Bundles.Reference("assets/javascripts/libs/MicrosoftAjax");
     Bundles.Reference("assets/javascripts/libs/MicrosoftMvcAjax");
-
+    Bundles.Reference("assets/javascripts/app");
 }
 <!DOCTYPE html>
 <html>
@@ -124,6 +124,10 @@
            document.write(unescape("%3Cscript src='@Bundles.Url("assets/javascripts/libs/MicrosoftAjax")' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='@Bundles.Url("assets/javascripts/libs/MicrosoftMvcAjax")' type='text/javascript'%3E%3C/script%3E"));
        }
+   </script>
+   @Bundles.RenderScripts("app")
+   <script>
+       App.initialize();
    </script>
 </body>
 </html>

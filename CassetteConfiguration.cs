@@ -28,7 +28,8 @@ namespace DinnerParty
             bundles.Add<ScriptBundle>("assets/javascripts/libs/MicrosoftAjax", b => b.PageLocation = "MicrosoftAjax");
             bundles.Add<ScriptBundle>("assets/javascripts/libs/MicrosoftMvcAjax", b => b.PageLocation = "MicrosoftMvcAjax");
 
-
+            // our app.js
+            bundles.Add<ScriptBundle>("assets/javascripts/app", b => b.PageLocation = "app");
 
         }
     }

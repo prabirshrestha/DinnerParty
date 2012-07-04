@@ -185,6 +185,7 @@
     <Content Include="assets\images\verisign.gif" />
     <Content Include="assets\images\yahoo.gif" />
     <Content Include="assets\images\yahoo_login.png" />
+    <Content Include="assets\javascripts\app\app.js" />
     <Content Include="assets\javascripts\header\modernizr-2.0.6-development-only.js" />
     <Content Include="assets\javascripts\libs\jquery.ui\jquery-ui-1.8.21.custom.min.js" />
     <Content Include="assets\javascripts\libs\jquery\jquery-1.7.2.js" />
