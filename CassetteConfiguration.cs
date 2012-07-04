@@ -20,6 +20,11 @@ namespace DinnerParty
 
             // note: never include modernizr from cdn, coz it is never minified and it isn't meant to be included from cdn
             bundles.Add<ScriptBundle>("assets/javascripts/header", b => b.PageLocation = "header");
+
+            bundles.Add<ScriptBundle>("assets/javascripts/libs/jquery", b => b.PageLocation = "jquery");
+            bundles.Add<ScriptBundle>("assets/javascripts/libs/jquery.ui", b => b.PageLocation = "jquery.ui");
+
+
         }
     }
 }

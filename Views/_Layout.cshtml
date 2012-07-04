@@ -3,6 +3,9 @@
     Bundles.Reference("assets/stylesheets/style.less");
     Bundles.Reference(DinnerParty.CassetteBundleConfiguration.JQueryUiCssPath);
     Bundles.Reference("assets/javascripts/header");
+    Bundles.Reference("assets/javascripts/libs/jquery");
+    Bundles.Reference("assets/javascripts/libs/jquery.ui");
+
 }
 <!DOCTYPE html>
 <html>
@@ -30,9 +33,6 @@
 
    <script type="text/javascript">
        if (typeof jQuery == 'undefined') {
-         
-           document.write(unescape("%3Cscript src='/Content/Scripts/jquery-1.6.2.min.js' type='text/javascript'%3E%3C/script%3E"));
-           document.write(unescape("%3Cscript src='/Content/Scripts/jquery-ui-1.8.15.min.js' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='/Content/Scripts/jquery.unobtrusive-ajax.min.js' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='/Content/Scripts/MicrosoftAjax.js' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='/Content/Scripts/MicrosoftMvcAjax.js' type='text/javascript'%3E%3C/script%3E"));
@@ -124,6 +124,9 @@
    <script>
        if (typeof jQuery == 'undefined') {
            document.write(unescape("%3Clink href='@Bundles.Url(DinnerParty.CassetteBundleConfiguration.JQueryUiCssPath)' rel='stylesheet' type='text/css'%3E"));
+           document.write(unescape("%3Cscript src='@Bundles.Url("assets/javascripts/libs/jquery")' type='text/javascript'%3E%3C/script%3E"));
+           document.write(unescape("%3Cscript src='@Bundles.Url("assets/javascripts/libs/jquery.ui")' type='text/javascript'%3E%3C/script%3E"));
+           
        }
    </script>
 </body>
