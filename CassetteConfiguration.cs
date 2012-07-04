@@ -23,6 +23,7 @@ namespace DinnerParty
 
             bundles.Add<ScriptBundle>("assets/javascripts/libs/jquery", b => b.PageLocation = "jquery");
             bundles.Add<ScriptBundle>("assets/javascripts/libs/jquery.ui", b => b.PageLocation = "jquery.ui");
+            bundles.Add<ScriptBundle>("assets/javascripts/libs/jquery.unobtrusive-ajax", b => b.PageLocation = "jquery.unobtrusive-ajax");
 
 
         }

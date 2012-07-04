@@ -223,8 +223,7 @@
     <Content Include="Content\Scripts\jquery.mobile-1.0a4.1.min.js" />
     <Content Include="Content\Scripts\jquery.mobile-1.0b2.js" />
     <Content Include="Content\Scripts\jquery.mobile-1.0b2.min.js" />
-    <Content Include="Content\Scripts\jquery.unobtrusive-ajax.js" />
-    <Content Include="Content\Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="assets\javascripts\libs\jquery.unobtrusive-ajax\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Content\Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Content\Scripts\jquery.validate.js" />
     <Content Include="Content\Scripts\jquery.validate.min.js" />
