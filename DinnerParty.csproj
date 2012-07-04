@@ -206,7 +206,7 @@
     <Content Include="assets\stylesheets\jquery.ui\humanity\jquery-ui-1.8.21.custom.css" />
     <Content Include="assets\stylesheets\style.less" />
     <None Include="Resources\favicon.ico" />
-    <Content Include="Content\Scripts\date.format.js" />
+    <Content Include="assets\javascripts\app\_libs\date.format.js" />
     <Content Include="Content\Scripts\geo-polyfill.js" />
     <Content Include="Content\Scripts\geo.js" />
     <Content Include="Content\Scripts\jquery-1.5.2-vsdoc.js" />
@@ -237,7 +237,7 @@
     <Content Include="Content\Scripts\MicrosoftMvcValidation.debug.js" />
     <Content Include="Content\Scripts\MicrosoftMvcValidation.js" />
     <Content Include="Content\Scripts\MSAjaxHistoryBundle.js" />
-    <Content Include="Content\Scripts\NerdDinner.js" />
+    <Content Include="assets\javascripts\app\_libs\NerdDinner.js" />
     <Content Include="Content\Scripts\smothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\Scripts\smothness\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\Scripts\smothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -252,10 +252,10 @@
     <Content Include="Content\Scripts\smothness\images\ui-icons_888888_256x240.png" />
     <Content Include="Content\Scripts\smothness\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Content\Scripts\smothness\jquery_ui_datepicker.css" />
-    <Content Include="Content\Scripts\timepicker_plug\css\style.css" />
-    <Content Include="Content\Scripts\timepicker_plug\css\TimePickerAddOn.css" />
-    <Content Include="Content\Scripts\timepicker_plug\timepicker.js" />
-    <Content Include="Content\Scripts\timepicker_plug\TimePickerAddOn.js" />
+    <Content Include="assets\javascripts\app\_libs\timepicker_plug\css\style.css" />
+    <Content Include="assets\javascripts\app\_libs\timepicker_plug\css\TimePickerAddOn.css" />
+    <Content Include="assets\javascripts\app\_libs\timepicker_plug\timepicker.js" />
+    <Content Include="assets\javascripts\app\_libs\timepicker_plug\TimePickerAddOn.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
