@@ -1,6 +1,7 @@
 ﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<dynamic>
 @{
     Bundles.Reference("assets/stylesheets/style.less");
+    Bundles.Reference(DinnerParty.CassetteBundleConfiguration.JQueryUiCssPath);
     Bundles.Reference("assets/javascripts/header");
 }
 <!DOCTYPE html>
@@ -16,26 +17,27 @@
    <link title="NerdDinner.com" rel="search" type="application/opensearchdescription+xml" href="@Url.Content("~/Services/OpenSearch.ashx")" />
 
    <link href="@Bundles.Url("assets/stylesheets/style.less")" rel="stylesheet" type="text/css" media="screen" />
+   <link href="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.11/themes/humanity/jquery-ui.css" rel="stylesheet" type="text/css" />
+
    @Bundles.RenderScripts("header")
 
-   <link href="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.11/themes/humanity/jquery-ui.css" rel="stylesheet" type="text/css" />
    <script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.6.2.min.js" type="text/javascript"></script> 
    <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.15/jquery-ui.min.js" type="text/javascript"></script> 
    <script src="//ajax.aspnetcdn.com/ajax/mvc/3.0/jquery.unobtrusive-ajax.min.js" type="text/javascript"></script>
    <script src="//ajax.aspnetcdn.com/ajax/4.0/1/MicrosoftAjax.js" type="text/javascript"></script> 
-    <script src="//ajax.aspnetcdn.com/ajax/mvc/3.0/MicrosoftMvcAjax.js" type="text/javascript"></script> 
+   <script src="//ajax.aspnetcdn.com/ajax/mvc/3.0/MicrosoftMvcAjax.js" type="text/javascript"></script> 
    
 
    <script type="text/javascript">
        if (typeof jQuery == 'undefined') {
-           document.write(unescape("%3Clink href='/Content/themes/base/jquery.ui.all.css' rel='stylesheet' type='text/css'%3E"));
+         
            document.write(unescape("%3Cscript src='/Content/Scripts/jquery-1.6.2.min.js' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='/Content/Scripts/jquery-ui-1.8.15.min.js' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='/Content/Scripts/jquery.unobtrusive-ajax.min.js' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='/Content/Scripts/MicrosoftAjax.js' type='text/javascript'%3E%3C/script%3E"));
            document.write(unescape("%3Cscript src='/Content/Scripts/MicrosoftMvcAjax.js' type='text/javascript'%3E%3C/script%3E"));
        }
-  </script>
+   </script>
 
    <script src="@Url.Content("~/Content/Scripts/date.format.js")" type="text/javascript"></script>
    <script src="@Url.Content("~/Content/Scripts/NerdDinner.js?v=6")" type="text/javascript"></script>
@@ -119,6 +121,10 @@
                lang: 'en' /* 'en', 'de', 'nl', 'es', 'fr' */
            });
        </script>*@
-
+   <script>
+       if (typeof jQuery == 'undefined') {
+           document.write(unescape("%3Clink href='@Bundles.Url(DinnerParty.CassetteBundleConfiguration.JQueryUiCssPath)' rel='stylesheet' type='text/css'%3E"));
+       }
+   </script>
 </body>
 </html>
