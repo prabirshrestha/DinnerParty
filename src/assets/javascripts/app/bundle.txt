@@ -1,0 +1,5 @@
+﻿_vendor/*
+NerdDinner.js
+app.js
+views/*
+*

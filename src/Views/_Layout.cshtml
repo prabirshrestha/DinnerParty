@@ -2,7 +2,11 @@
 @{
     Bundles.Reference("assets/stylesheets/main.css");
     Bundles.Reference("assets/javascripts/header");
+    Bundles.Reference("assets/javascripts/app");
     Bundles.Reference("assets/javascripts/local/jquery");
+    Bundles.Reference("assets/javascripts/local/geo");
+    Bundles.Reference("assets/javascripts/local/geo-polyfill");
+    
 }
 
 <!DOCTYPE html>
@@ -128,6 +132,17 @@
         if (typeof jQuery == 'undefined') {
             document.write('<script src="@Bundles.Url("assets/javascripts/local/jquery")"><\/script>');
         }
+    </script>
+    @Bundles.RenderScripts("app")
+    <script>
+        App.initialize({
+            ipInfoDbKey: '@System.Configuration.ConfigurationManager.AppSettings["ipInfoDbKey"]',
+            bingMapsKey: '@System.Configuration.ConfigurationManager.AppSettings["BingMapsKey"]',
+            assets: {
+                geo: '@Bundles.Url("assets/javascripts/local/geo")',
+                geoPolyFill: '@Bundles.Url("assets/javascripts/local/geo")'
+            }
+        });
     </script>
 </body>
 </html>

@@ -15,8 +15,13 @@ namespace DinnerParty
 
             bundles.Add<ScriptBundle>("assets/javascripts/header", b => b.PageLocation = "header");
 
+            bundles.Add<ScriptBundle>("assets/javascripts/app", b => b.PageLocation = "app");
+
             // local fallbacks
             bundles.Add<ScriptBundle>("assets/javascripts/local/jquery", new[] { "assets/javascripts/local/jquery-1.7.2.js" });
+            bundles.Add<ScriptBundle>("assets/javascripts/local/geo", new[] { "assets/javascripts/local/geo.js" });
+            bundles.Add<ScriptBundle>("assets/javascripts/local/geo-polyfill", new[] { "assets/javascripts/local/geo-polyfill.js" });
+
         }
     }
 }
