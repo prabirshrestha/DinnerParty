@@ -12,6 +12,8 @@ namespace DinnerParty
         public void Configure(BundleCollection bundles)
         {
             bundles.AddPerIndividualFile<StylesheetBundle>("assets/stylesheets");
+
+            bundles.Add<ScriptBundle>("assets/javascripts/header", b => b.PageLocation = "header");
         }
     }
 }
