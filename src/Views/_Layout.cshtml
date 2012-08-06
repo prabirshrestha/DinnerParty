@@ -2,6 +2,7 @@
 @{
     Bundles.Reference("assets/stylesheets/main.css");
     Bundles.Reference("assets/javascripts/header");
+    Bundles.Reference("assets/javascripts/local/jquery");
 }
 
 <!DOCTYPE html>
@@ -122,6 +123,11 @@
                lang: 'en' /* 'en', 'de', 'nl', 'es', 'fr' */
            });
        </script>*@
-
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.7.2.min.js"></script>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write('<script src="@Bundles.Url("assets/javascripts/local/jquery")"><\/script>');
+        }
+    </script>
 </body>
 </html>

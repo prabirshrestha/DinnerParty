@@ -126,6 +126,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\javascripts\local\jquery-1.7.2.js" />
     <Content Include="assets\javascripts\header\modernizr-2.0.6-development-only.js" />
     <Content Include="assets\stylesheets\images\ajax-loader.png" />
     <Content Include="assets\stylesheets\images\bkg.jpg" />

@@ -14,6 +14,9 @@ namespace DinnerParty
             bundles.AddPerIndividualFile<StylesheetBundle>("assets/stylesheets");
 
             bundles.Add<ScriptBundle>("assets/javascripts/header", b => b.PageLocation = "header");
+
+            // local fallbacks
+            bundles.Add<ScriptBundle>("assets/javascripts/local/jquery", new[] { "assets/javascripts/local/jquery-1.7.2.js" });
         }
     }
 }
