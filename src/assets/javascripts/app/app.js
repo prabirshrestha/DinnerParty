@@ -5,8 +5,9 @@
         options || (options = {});
         this.options = options;
 
-        console.log('app init');
+        // init views
         App.Views.MapView.initialize();
         App.Views.SearchView.initialize();
+        App.Views.LogonView.initialize();
     }
 };

@@ -128,6 +128,7 @@
   <ItemGroup>
     <Content Include="assets\javascripts\app\app.js" />
     <Content Include="assets\javascripts\app\bundle.txt" />
+    <Content Include="assets\javascripts\app\views\LogonView.js" />
     <Content Include="assets\javascripts\app\views\MapView.js" />
     <Content Include="assets\javascripts\app\views\SearchView.js" />
     <Content Include="assets\javascripts\app\_vendor\console.js" />
