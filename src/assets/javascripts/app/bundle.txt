@@ -1,4 +1,6 @@
-﻿_vendor/*
+﻿_vendor/console.js
+_vendor/jquery.validate.js
+_vendor/*
 NerdDinner.js
 app.js
 views/*
