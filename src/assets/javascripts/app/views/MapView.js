@@ -6,6 +6,10 @@
 
     initialize = function () {
         $(function () {
+            if ($('#dinnerForm').length > 0) {
+                return; // DinnerFormView will load the map, so MapView should do nothing
+            }
+            
             // make sure the map control has loaded, this has been an issue in FF4
             // see http://stackoverflow.com/questions/5566393/issue-with-bing-map-p-elsource-attachevent-is-not-a-function
             var interval = setInterval(function () {
@@ -34,22 +38,22 @@
     };
 
     onNavigation = function () {
-//        if (Sys.Application.get_stateString() === '') {
-            NerdDinner.FindMostPopularDinners(8);
+        //        if (Sys.Application.get_stateString() === '') {
+        NerdDinner.FindMostPopularDinners(8);
 
-            getCurrentLocation();
-//        }
-//        else {
-//            var where = Sys.Application._state.where;
+        getCurrentLocation();
+        //        }
+        //        else {
+        //            var where = Sys.Application._state.where;
 
-//            $get('Location').value = where;
-//            NerdDinner.FindDinnersGivenLocation(where);
-//        }
+        //            $get('Location').value = where;
+        //            NerdDinner.FindDinnersGivenLocation(where);
+        //        }
     };
 
     // public apis
     return {
         initialize: initialize
     };
-    
+
 })();
