@@ -158,8 +158,11 @@ NerdDinner._renderDinners = function (dinners) {
     });
 
     function _getDinnerDate(dinner, formatStr) {
-        return '<strong>' + _dateDeserialize(dinner.EventDate).format(formatStr) + '</strong>';
+        return '<strong>' + dinner.EventDate + '</strong>';
+//        return '<strong>' + _dateDeserialize(dinner.EventDate).format(formatStr) + '</strong>';
     }
+    
+
 
     function _getDinnerLinkHTML(dinner) {
         return '<a href="' + dinner.Url + '">' + dinner.Title + '</a>';
